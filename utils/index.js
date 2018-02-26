@@ -27,7 +27,7 @@ export const defaultScroll = (axis) => {
 
 export const isMobile = () => document.body.clientWidth < 768;
 
-const isNotFoundPicture = photoUrl => photoUrl.indexOf("imgur.com") >= 0
+const isNotFoundPicture = photoUrl => photoUrl.indexOf('imgur.com') >= 0
 
 export const generatePhotoThumbsUrl = (photo, product) => isNotFoundPicture(photo) ? photo : `${API_ENDPOINT}/images/${product.StockNumber}/thumbs/${photo.replace(/^.*[\\\/]/, '').split(/[?#]/)[0]}`;
 export const generatePhotoUrl = (photo, product) => isNotFoundPicture(photo) ? photo : `${API_ENDPOINT}/images/${product.StockNumber}/${photo.replace(/^.*[\\\/]/, '').split(/[?#]/)[0]}`;
