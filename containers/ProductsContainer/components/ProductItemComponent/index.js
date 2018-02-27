@@ -48,7 +48,7 @@ const ProductItemComponent = ({ product, snippetEnabled }) => {
               <div styleName="description-item">
                 <div styleName="description-item-title">Engine:</div>
                 <div styleName="description-item-text">
-                  <span>{`${roundEngineSize(product.EngineCapacity)}L`}</span>
+                  <span>{`${product.EngineCapacity}L`}</span>
                   <span>
                   {product.filters.Fuel ?
                     <TagItemCompactComponent
